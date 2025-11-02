@@ -413,12 +413,20 @@ section {
     position: relative;
 }
 
-.logo-preview.dark-bg {
-    background: linear-gradient(135deg, var(--navy-dark), var(--navy));
+.logo-preview.navy-bg {
+    background: var(--navy);
+}
+
+.logo-preview.white-bg {
+    background: var(--white-pure);
 }
 
 .logo-preview.light-bg {
     background: linear-gradient(135deg, #F9FAFB, #F3F4F6);
+}
+
+.logo-preview.dark-bg {
+    background: linear-gradient(135deg, var(--navy-dark), var(--navy));
 }
 
 .logo-preview img {
@@ -445,8 +453,74 @@ section {
 
 .logo-info code {
     display: block;
-    margin: var(--space-2) 0;
+    margin: var(--space-2) 0 var(--space-4) 0;
     font-size: 0.8125rem;
+}
+
+/* Download Section */
+.download-section {
+    margin: var(--space-8) 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-download-all {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-4) var(--space-6);
+    background: linear-gradient(135deg, var(--orange), var(--orange-light));
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: 0 2px 8px rgba(255, 107, 26, 0.25);
+}
+
+.btn-download-all:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 107, 26, 0.35);
+}
+
+.btn-download-all:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-2) var(--space-4);
+    background: white;
+    color: var(--orange);
+    border: 1.5px solid var(--orange);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    margin-top: var(--space-2);
+}
+
+.btn-download:hover {
+    background: var(--orange);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(255, 107, 26, 0.2);
+}
+
+.btn-download svg {
+    transition: transform var(--transition-fast);
+}
+
+.btn-download:hover svg {
+    transform: translateY(2px);
 }
 
 /* Color Palette */
