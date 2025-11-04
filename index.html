@@ -18,11 +18,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
+br
 <body>
     <!-- Header -->
     <header>
@@ -455,40 +455,133 @@
                 <h2>Typography</h2>
 
                 <div class="type-sample">
-                    <h3>Primary: Inter</h3>
-                    <p style="font-family: Inter, sans-serif; font-size: 1.5rem;">The quick brown fox jumps over the
-                        lazy dog</p>
-                    <p><strong>Use for:</strong> UI, body copy, navigation, all digital applications</p>
-                    <p><strong>Weights:</strong> 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold)</p>
+                    <h3>Inter — Universal Typeface</h3>
+                    <p style="font-family: Inter, sans-serif; font-size: 1.5rem; font-weight: 400;">The quick brown fox jumps over the lazy dog</p>
+                    <p><strong>Use for:</strong> Everything — headlines, body copy, UI, navigation, all applications</p>
+                    <p><strong>Weights Available:</strong> 400 (Regular), 500 (Medium), 600 (Semibold), 700 (Bold), 800 (Extra Bold)</p>
+                    <p><strong>Why Inter Only:</strong> Maximum legibility across all contexts, optimized for digital screens, consistent brand voice, excellent performance</p>
                 </div>
 
-                <div class="type-sample">
-                    <h3>Display: Space Grotesk</h3>
-                    <p style="font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 700;">The Arena
-                        Awaits</p>
-                    <p><strong>Use for:</strong> Headlines, hero text, brand statements</p>
-                    <p><strong>Weights:</strong> 600 (Semibold), 700 (Bold)</p>
-                </div>
-
-                <h3>Type Scale</h3>
+                <h3>Type Scale & Hierarchy</h3>
                 <div class="type-example"
-                    style="font-family: 'Space Grotesk', sans-serif; font-size: 3.5rem; font-weight: 700;">
-                    H1 Display
+                    style="font-family: Inter, sans-serif; font-size: 3.5rem; font-weight: 800; letter-spacing: -0.02em;">
+                    H1 Display — Extra Bold (800)
                 </div>
                 <div class="type-example"
-                    style="font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; font-weight: 700;">
-                    H2 Section
+                    style="font-family: Inter, sans-serif; font-size: 2.5rem; font-weight: 800; letter-spacing: -0.02em;">
+                    H2 Section — Extra Bold (800)
                 </div>
                 <div class="type-example"
-                    style="font-family: 'Space Grotesk', sans-serif; font-size: 1.875rem; font-weight: 700;">
-                    H3 Subsection
+                    style="font-family: Inter, sans-serif; font-size: 1.875rem; font-weight: 700;">
+                    H3 Subsection — Bold (700)
                 </div>
                 <div class="type-example"
-                    style="font-family: Inter, sans-serif; font-size: 1.25rem; line-height: 1.75;">
-                    Body Large — Perfect for intro paragraphs and emphasis
+                    style="font-family: Inter, sans-serif; font-size: 1.25rem; font-weight: 600; line-height: 1.75;">
+                    H4 Heading — Semibold (600)
+                </div>
+                <div class="type-example"
+                    style="font-family: Inter, sans-serif; font-size: 1.125rem; line-height: 1.75;">
+                    Body Large — Perfect for intro paragraphs
                 </div>
                 <div class="type-example" style="font-family: Inter, sans-serif; font-size: 1rem; line-height: 1.75;">
-                    Body — Standard text for all content
+                    Body Regular (400) — Standard text for all content
+                </div>
+                <div class="type-example" style="font-family: Inter, sans-serif; font-size: 0.875rem; line-height: 1.6; color: #8C8C8C;">
+                    Body Small — Captions, metadata, secondary information
+                </div>
+
+                <div class="card">
+                    <h3>Font Visibility & Contrast Guidelines</h3>
+                    <p class="lead">Proper font weight and color choices ensure readability across light and dark themes.</p>
+
+                    <h4>Light Backgrounds (White, Light Gray)</h4>
+                    <div class="two-col">
+                        <div>
+                            <h5>✅ Recommended</h5>
+                            <ul>
+                                <li><strong>Headlines:</strong> Navy (#0B1020) at 700-800 weight</li>
+                                <li><strong>Body Text:</strong> Gray Dark (#1E1E1E) at 400 weight</li>
+                                <li><strong>Secondary Text:</strong> Gray (#8C8C8C) at 400-500 weight</li>
+                                <li><strong>Contrast Ratios:</strong> Navy on White = 14.5:1, Gray Dark on White = 12.1:1</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>❌ Avoid</h5>
+                            <ul>
+                                <li>Light gray text (poor contrast)</li>
+                                <li>Font weights below 400 for body text</li>
+                                <li>Orange text on white (3.2:1 — fails WCAG AA)</li>
+                                <li>Font sizes below 14px for body content</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Dark Backgrounds (Navy, Navy Light)</h4>
+                    <div class="two-col">
+                        <div>
+                            <h5>✅ Recommended</h5>
+                            <ul>
+                                <li><strong>Headlines:</strong> Warm White (#F5EDE6) at 700-800 weight</li>
+                                <li><strong>Body Text:</strong> Warm White (#F5EDE6) at 400 weight</li>
+                                <li><strong>Secondary Text:</strong> Gray Light (#CFCFCF) at 400-500 weight</li>
+                                <li><strong>Accents:</strong> Orange (#FF6B1A) at 600-700 weight</li>
+                                <li><strong>Contrast Ratios:</strong> Warm White on Navy = 12.8:1, Orange on Navy = 7.2:1</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>❌ Avoid</h5>
+                            <ul>
+                                <li>Pure white (#FFFFFF) — too harsh, causes eye strain</li>
+                                <li>Font weights below 400 (disappears on dark)</li>
+                                <li>Gray (#8C8C8C) on Navy (poor contrast)</li>
+                                <li>Thin strokes or light weights for small text</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h4>Weight Selection by Context</h4>
+                    <table style="width: 100%; margin-top: var(--space-4); border-collapse: collapse;">
+                        <tr style="border-bottom: 2px solid #E5E7EB;">
+                            <th style="padding: var(--space-3); text-align: left;">Element</th>
+                            <th style="padding: var(--space-3); text-align: left;">Light Theme</th>
+                            <th style="padding: var(--space-3); text-align: left;">Dark Theme</th>
+                            <th style="padding: var(--space-3); text-align: left;">Reason</th>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E5E7EB;">
+                            <td style="padding: var(--space-3);">H1/H2 Headlines</td>
+                            <td style="padding: var(--space-3);">800 weight</td>
+                            <td style="padding: var(--space-3);">800 weight</td>
+                            <td style="padding: var(--space-3);">Maximum impact and visibility</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E5E7EB;">
+                            <td style="padding: var(--space-3);">H3/H4 Subheads</td>
+                            <td style="padding: var(--space-3);">700 weight</td>
+                            <td style="padding: var(--space-3);">700 weight</td>
+                            <td style="padding: var(--space-3);">Clear hierarchy without overwhelming</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E5E7EB;">
+                            <td style="padding: var(--space-3);">Body Text</td>
+                            <td style="padding: var(--space-3);">400 weight</td>
+                            <td style="padding: var(--space-3);">400-500 weight</td>
+                            <td style="padding: var(--space-3);">Dark bg needs slightly heavier for clarity</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #E5E7EB;">
+                            <td style="padding: var(--space-3);">UI Labels</td>
+                            <td style="padding: var(--space-3);">500 weight</td>
+                            <td style="padding: var(--space-3);">500-600 weight</td>
+                            <td style="padding: var(--space-3);">Needs to stand out from body text</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: var(--space-3);">CTAs/Buttons</td>
+                            <td style="padding: var(--space-3);">600 weight</td>
+                            <td style="padding: var(--space-3);">600-700 weight</td>
+                            <td style="padding: var(--space-3);">Must be immediately actionable</td>
+                        </tr>
+                    </table>
+
+                    <div class="info-box success-box" style="margin-top: var(--space-6);">
+                        <strong>💡 Key Principle:</strong> On dark backgrounds, bump font weights up by 100 (e.g., 400→500) for equivalent perceived weight. Dark backgrounds make text appear lighter due to halation effect.
+                    </div>
                 </div>
             </section>
 

@@ -19,7 +19,7 @@
     
     /* Typography */
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    --font-display: 'Space Grotesk', 'Inter', sans-serif;
+    --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     
     /* Spacing Scale */
     --space-1: 0.25rem;
@@ -212,7 +212,7 @@ main {
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    font-weight: 700;
+    font-weight: 800; /* Extra Bold for maximum impact and visibility */
     letter-spacing: -0.02em;
     line-height: 1.2;
     color: var(--navy);
@@ -221,6 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 3.5rem;
     margin-bottom: var(--space-6);
+    font-weight: 800;
 }
 
 h2 {
@@ -229,6 +230,7 @@ h2 {
     margin-bottom: var(--space-8);
     padding-top: var(--space-12);
     border-top: 1px solid #E5E7EB;
+    font-weight: 800;
 }
 
 h2:first-child {
